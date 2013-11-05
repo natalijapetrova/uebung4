@@ -1,0 +1,61 @@
+<h1> Web Fizz buzz Spiel</h1>
+<p>Ausgabe alle Zahlen von 1 bis 100 und die durch 3 und 5 teilbar sind:</p>
+
+<table border="1">
+
+<tr>
+<th>Zahl</th>
+<th>Teilbar durch 2</th>
+<th>Teilbar durch 4</th>
+<th>IzzyBizzy</th>
+</tr>
+
+<% (1..100).each do |i| %>
+
+<% if i%2 ==0 and i%4 ==0 %>
+<tr bgcolor = "#FFFF00">
+<% else %>
+</tr>
+<% end %> 
+	
+
+	<td><%= i %></td>
+
+	<td>
+		<% if i%2 ==0 %>
+			X
+	  <% end %>
+	</td>
+
+	<td> 
+		<% if i %4 == 0 %>
+		X
+		<% end %>
+	</td>
+
+
+
+	<td>
+		<%  if i%2 == 0 and i%4 ==0 %>
+		 IzzyBizzy
+
+		<% elsif i %2 == 0 %>
+		Izzy
+
+		<% elsif i %4 == 0 %>
+		Bizzy
+
+<% else %>
+
+		 <%= i %>
+
+		 
+				<% end %>
+	</td>
+
+
+</tr>
+
+
+<% end %>
+</table>

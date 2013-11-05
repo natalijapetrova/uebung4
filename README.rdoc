@@ -1,5 +1,8 @@
 == README
 
+Natalija
+Uebung4 - gibt die Zahle von 1 bis 100 aus.
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
